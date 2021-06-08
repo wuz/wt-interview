@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+
+  &.a\:center {
+    align-items: center;
+  }
+
+  &.a\:start {
+    align-items: flex-start;
+  }
+
+  &.j\:center {
+    justify-content: center;
+  }
+
+  &.j\:space-between {
+    justify-content: space-between;
+  }
+}
+
+.grid {
+  --grid-columns: 4;
+  --grid-min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-columns),
+    minmax(var(--grid-min-width), 1fr)
+  );
+  grid-gap: 20px;
+}
+
+.flow {
+  > * + * {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../style/tokens.scss";
+
+.button {
+  background: $brand;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 9px;
+  color: $white;
+  line-height: 24px;
+  min-width: 90px;
+  cursor: pointer;
+
+  &[disabled] {
+    background: $gray;
+    cursor: not-allowed;
+  }
+}
