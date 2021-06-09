@@ -1,0 +1,18 @@
+@each $num, $size in $typescale {
+  .typescale\:#{$num} {
+    font-size: $size;
+  }
+}
+
+@for $weight from 1 through 8 {
+  .weight\:#{$weight * 100} {
+    font-weight: $weight * 100;
+  }
+}
+
+p {
+  width: 60em;
+  &.less {
+    width: 30em;
+  }
+}

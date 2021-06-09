@@ -1,0 +1,14 @@
+.room-card {
+  .thumbnail {
+    position: relative;
+    width: 100%;
+    border-radius: 11px;
+    overflow: hidden;
+    padding-bottom: 52%;
+
+    img {
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
